@@ -1,3 +1,6 @@
-# GA208
+# Sean Elston - In class activites
+## Devlogs
+### W1
+This is seans first Devlog
 
-This is Seans First README
+Test
