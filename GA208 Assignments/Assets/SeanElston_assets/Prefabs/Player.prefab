@@ -105,3 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41af6653df9350489f0f4a87ca36c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  moveSpeed: 10
+  startingSeeds: 5
+  seedsToWin: 5
