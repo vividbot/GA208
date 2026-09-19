@@ -43,4 +43,7 @@ Q: Now that we know that  mobs various actions are organized into states, how mi
 
 ## MG3 Diagram
 
-Place diagram here
+Diagram for MG3 project 
+
+<img width="7200" height="5400" alt="SeanElston_MG3_Diagram" src="https://github.com/user-attachments/assets/3dc67bfe-27bb-4c9f-9770-96c3c5985a63" />
+
