@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum MovementState {
@@ -7,8 +8,9 @@ public enum MovementState {
 public class Pigeon : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
-
+    private MovementState _currentActivity;
     // (1) add a member variable to represent the Pigeon's state
+     
     
 
     void Update()
@@ -22,7 +24,17 @@ public class Pigeon : MonoBehaviour
     // - otherwise, it should be Idle
     private void UpdateState ()
     {
-        
+        if (Input.GetKey("a"))
+        {
+            Debug.Log("State Set to Flying");
+            _currentActivity = MovementState.Flying;
+        }
+        else
+        {
+            Debug.Log("State Set to Idle");
+            _currentActivity = MovementState.Idle;
+        }
+
     }
 
     // (3) fill in this method to update the pigeon's animation based on its state
@@ -31,7 +43,16 @@ public class Pigeon : MonoBehaviour
     // use a Switch statement!
     private void UpdateAppearance()
     {
-        
+        if (_currentActivity == MovementState.Flying)
+        {
+            Debug.Log("Pigeon Is Flying");
+            PlayFlyAnimation();
+        }
+        else
+        {
+            Debug.Log("Pigeon is Idling");
+            PlayIdleAnimation();
+        }
     }
 
     private void PlayFlyAnimation () {
