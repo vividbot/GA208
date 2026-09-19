@@ -21,7 +21,7 @@ Classes that inherit from a parent class, will inherit monobehaviour or inherit 
 Static means u can use it directly from the class name instead of making a vector 3 before 
 
 
-## Activity
+## Lecture notes
 ### Inheritance 
 Q:  what is inheritance - Parent script is inherited by the children script - A: Children scripts can call methods and variable from the parent script.
 Q: How might it be useful when building minecraft - A: Mobs can inherit Shared variables and shared methods that are generic to all mobs - a template wiht unique implimentation.
@@ -37,5 +37,9 @@ Using bools to handle states is messy due to the possibility of overlaping state
 Q: What is a finite state machine - A: A finite state machine is a machine or design patter that keeps track of mutually exclusive states and switches them. 
 Q: Where can you imagine finite state machines being useful in game development? - A: NPC aggression levels in game, for example Fallout 4, does the NPC like you or dislike you, and what are they currently doing - Sleeping - Wandering - Walking to a specific place - Anggro or attacking - Searching looking for enemy or player - ETC~
 
+Q: How could you imagine a Finite State Machine be useful to build a system for the minecraft cows various actions? - A: State for Wander - Follow Player - Eat food - Run away from threat - Maate. Actions might change the animation or action of the NPC
 
+Q: Now that we know that  mobs various actions are organized into states, how might we build a system that uses state machines while the classes are inheriting from a parent mob class, Does that affect our architecture? - A: Could let the parent define the state machine and then have the children conform to that state machine, if the diffrent NPCS have wildly diffrent states then they might need to ovveride
 
+## Activity
+### Inheritance 
