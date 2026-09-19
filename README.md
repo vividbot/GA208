@@ -41,5 +41,6 @@ Q: How could you imagine a Finite State Machine be useful to build a system for 
 
 Q: Now that we know that  mobs various actions are organized into states, how might we build a system that uses state machines while the classes are inheriting from a parent mob class, Does that affect our architecture? - A: Could let the parent define the state machine and then have the children conform to that state machine, if the diffrent NPCS have wildly diffrent states then they might need to ovveride
 
-## Activity
-### Inheritance 
+## MG3 Diagram
+
+Place diagram here
