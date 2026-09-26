@@ -47,3 +47,60 @@ Diagram for MG3 project
 
 <img width="7200" height="5400" alt="SeanElston_MG3_Diagram" src="https://github.com/user-attachments/assets/3dc67bfe-27bb-4c9f-9770-96c3c5985a63" />
 
+
+# WG4 Devlog
+
+
+
+## Quiz answer notes
+1. reusing classes and using child classes is important and helpful for reducing rewritten code and sharing behaviour between classes.
+
+2. Polymorphism is having the same method names but diffrent behaviour for subclasses. (note for self polymorphism is in relation to methods)
+
+3. Enums can be used in order to create finite state machines so that no one state is active at the same time. 
+
+## Lecture notes
+
+Vectors and Transform Components
+
+Vectors:
+
+A scalar is a single value : speed
+A vector is a list of values: in 3D simulations, 3 scalars representing somthing going on in all 3 axes - Velocity => speed - Displacement => distance on xyz axes
+
+Most common usage: Displacement in 3D space
+- you can visualize vectors as an arrow pointing from on location to another
+- the (xyz) components of a vector tell you about how far you traveled on each axis to get from the first point to the second.
+
+Transforms: 
+- Transofmr components store the information about our object in the 3D cartesian coordinates
+- Position, rotation, and scale are all 3d Vectors
+
+3d Vectors for rotation
+- makes the object spin on a poly laying straight on that axis
+- objects will always rotate around pivot of object in scene
+
+Transform.rotate() method to rotate an object - called on an existing transform not by itself
+
+Coordinate spaces 
+- A coordinate space is a relative space that vectors can live in
+- Coordinate space are defined by a an orgin (center 0,0,0 position)
+- Two most important coordinate spaces are object and world space, 
+- In unity : Able to switch between viewing local and global control points 
+- each object in the unity scene will have its own object space that is seperate from the global worldspace 
+
+Vector3 moveAmount = new Vector3(0,0,1);
+
+1. transform.Translate(moveAmount);
+
+2. transform.positon += transform.forward * moveAmount;
+
+3. transform.position += moveAmount;
+
+Lines 1 and two will succesfully move the gameobject in its worldspace, Transform.Translate defaults to the object space when not otherwise specified in the code and transform.position when combined with transform.forward will ensure the object moves forward realtive to object space.
+
+
+
+
+
+
