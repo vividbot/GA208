@@ -44,7 +44,10 @@ public class Muskrat : MonoBehaviour
             _sphereTransform.position,
             axis,
             forward * _rotationSpeed * Time.deltaTime
+            
         );
+
+        Debug.Log(forward);
 
 
         // STEP 4 -------------------------------------------------------------
@@ -53,6 +56,18 @@ public class Muskrat : MonoBehaviour
         // The Muskrat should never play the "flying" animation while on a
         //      bubble.
 
+        if(forward == 0 )
+        {
+            _animator.SetBool("running", false);
+            _animator.SetBool("flying", false);
+        }
+        else
+        {
+            _animator.SetBool("running", true);
+            _animator.SetBool("flying", false);
+        }
+
+        
 
         // STEP 4 -------------------------------------------------------------
     }
@@ -75,6 +90,10 @@ public class Muskrat : MonoBehaviour
         float leftright = Input.GetAxis("Horizontal");
 
         // STEP 1 -------------------------------------------------------------
+        
+        float rotation = leftright * _rotationSpeed * Time.deltaTime;
+        transform.Rotate(Vector3.up, rotation);
+
 
 
         // STEP 2 -------------------------------------------------------------
@@ -83,7 +102,7 @@ public class Muskrat : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        transform.Translate(Vector3.forward * movement * _moveSpeed * Time.deltaTime);
 
         // STEP 2 -------------------------------------------------------------
 
@@ -97,6 +116,27 @@ public class Muskrat : MonoBehaviour
 
         
         // STEP 3 -------------------------------------------------------------
+        if (Mathf.Abs(_rigidbody.linearVelocity.z) > 0 && Mathf.Abs(_rigidbody.linearVelocity.x) > 0 )
+        {
+            _animator.SetBool("running", true);
+        }
+        else
+        {
+            _animator.SetBool("running", false);
+        }
+
+        if(_rigidbody.linearVelocity.y <= 0)
+        {
+            _animator.SetBool("flying", false);
+        }
+        else
+        {
+            _animator.SetBool("flying", true);
+        }
+
+        
+
+
     }
 
     // ------------------------------------------------------------------------

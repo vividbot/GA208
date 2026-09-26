@@ -99,8 +99,14 @@ Vector3 moveAmount = new Vector3(0,0,1);
 
 Lines 1 and two will succesfully move the gameobject in its worldspace, Transform.Translate defaults to the object space when not otherwise specified in the code and transform.position when combined with transform.forward will ensure the object moves forward realtive to object space.
 
+Animation
+
+Animation clips and controllers are assets not components - created in the asset browser which then are used by the animation controller within the scene. 
+parameters ar set in the animation editor which we can call in scripting
+
+_animator.SetBool("flying", true) syntax for setting bool
 
 
-
-
-
+## Activity Devlog Question Answer
+q: in Step 2 of your Muskrat code, why does your new line of code move the Muskrat forward correctly? Use the vocab term "coordinate space".
+a: In step 2 I replaced the line transform.position with transform.translate. I did this because transform.position uses the world coordinate space, while transform.translate uses the local coordinate space (by default if not otherwise stated in the code) which means that instead of moving the player relative to the worldspace the script is now moving the player relative to the local coordinate space.
