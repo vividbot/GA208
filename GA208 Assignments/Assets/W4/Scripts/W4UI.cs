@@ -6,10 +6,22 @@ public class W4UI : MonoBehaviour
     [SerializeField] private GameObject _pigeonCooDialogue;
     [SerializeField] private float _duration;
 
+
+
+
+    
     // add a new method here
     // use the Locator to find the Pigeon
     // then, subscribe the HandlePigeonCoo method to the Pigeon coo event
+    [SerializeField] W4Pigeon gameobject;
 
+
+    private void Start()
+    {
+        
+        gameobject.pigeonAction += HandlePigeonCoo;
+
+    }
 
 
 

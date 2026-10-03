@@ -110,3 +110,11 @@ _animator.SetBool("flying", true) syntax for setting bool
 ## Activity Devlog Question Answer
 q: in Step 2 of your Muskrat code, why does your new line of code move the Muskrat forward correctly? Use the vocab term "coordinate space".
 a: In step 2 I replaced the line transform.position with transform.translate. I did this because transform.position uses the world coordinate space, while transform.translate uses the local coordinate space (by default if not otherwise stated in the code) which means that instead of moving the player relative to the worldspace the script is now moving the player relative to the local coordinate space.
+
+
+# WG5 Devlog
+## Lecture notes
+
+- Will re write these later
+
+## Activity
