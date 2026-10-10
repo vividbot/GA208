@@ -141,4 +141,10 @@ The controller represents Game Logic, like battles, points, or branching dialogu
 
 
 
-## Activity - Events
+# WG6 Devlog
+## Quiz Notes
+
+- q4 - method is not abstract or virtual so we cannot ovveride it in the script calling the method
+- abstract metods need to be implimented in the child class that is inheriting the abstract class.
+- intefaces are essentially abstract classes with some diffrences.
+
