@@ -173,3 +173,6 @@ The controller represents Game Logic, like battles, points, or branching dialogu
 - Every week mandatory group meeting in class
 - Proposals - Propsal first draft is due before next class, will get feedback during next class. - Will edit Final Draft based on feedback.
 - Project Submissions - Milestone 1, 2, and 3 - 11/06 Milestone 1 - Milestone - Milestone 3 12/11
+
+
+Project Ideas - Physics based quests - simiar to Peak - Grabbing and throwing or placing objects on places.
