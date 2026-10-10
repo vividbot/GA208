@@ -148,3 +148,28 @@ The controller represents Game Logic, like battles, points, or branching dialogu
 - abstract metods need to be implimented in the child class that is inheriting the abstract class.
 - intefaces are essentially abstract classes with some diffrences.
 
+## Model View Controller Pattern
+- model is the data View is the player facing stuff, controller is the game code/logic.
+- When building objets in a game, its good to seperate the data from the logic so when other designers need to work on characters or art they dont need to recompile code to change things
+
+## Scriptable objects
+- Scriptable objects should be used to store things that are purley data (not game logic), rather than hard coding that data into the game object. 
+
+
+## Activity 4 - Desgin pattern Discussion
+
+1 Hatsune Miku Rythm game
+- Scriptable objects for defining timing, key press type, Sprite, 
+- Singleton - When pressing a button it needs to affect multiple diffrent things at once, So a singleton locator in order to handle sending events to all the corresponding sound, vfx, and visual systems in order to make the game smoothly while compartmentalizing code.
+- Polymorphism in order to handle the diffrent types of rythm movers(?) in order to reduce repetative code as well. Since most of the rythm beats share the same logic but have slightly diffrent actions. 
+
+2 Valorant 
+- Inheritence/Polymorphism - handles the Health, Movement, and attacks for each player, since while there are diffrent characters, their base level health attacks and movement are all identical in order to keep a fair playing field.
+- State Machine - Handles things like animation, Unique attacks that cannot be cancelled, and other states that need to be exclusive.
+- Scriptable Objects - Can handle weapons damage or ability damage to allow designers to make balance tweaks without going to recompile the code of the game. 
+- Singletons - handling player input and matching to all of the other systems in the game, additionally syncing damage and stats acrost all the diffrent players in the game. 
+
+## Final project requirments 
+- Every week mandatory group meeting in class
+- Proposals - Propsal first draft is due before next class, will get feedback during next class. - Will edit Final Draft based on feedback.
+- Project Submissions - Milestone 1, 2, and 3 - 11/06 Milestone 1 - Milestone - Milestone 3 12/11
