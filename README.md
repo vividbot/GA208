@@ -115,6 +115,30 @@ a: In step 2 I replaced the line transform.position with transform.translate. I 
 # WG5 Devlog
 ## Lecture notes
 
-- Will re write these later
+Final Project Options
 
-## Activity
+- Point and click adventure with branching dialogue
+- or unique idea that satisfys complexity requirments
+
+### Tightly coupled vs loosley coupled code
+
+Tightly coupled code is when a class has refrences to all of the diffrenct objects and gameobjects in a scene and refrences them all in the same script in order to trigger an action - which is inneficent and can cause a lot of extra code to be written
+
+Loosley coupled code is when the class uses Events in order to brodcast a message to all the other components in a scene to tell them what to do rather than manually writng that logic in one class.
+
+This way the other objects in a scene (ui, enemys, npcs, vfx, etc) only have to subscribe to the event that the main class is calling in order to trigger those events. Thus for Decoupling the code
+
+### Model-View-Controller Pattern
+
+Most games are architected with the model view controller design, a pattern in which each of these systems are decoupled from each other.
+
+The model represents game data
+
+The view represents visuals and results, like sound, ui, and animations
+
+The controller represents Game Logic, like battles, points, or branching dialogue systems.
+
+
+
+
+## Activity - Events
