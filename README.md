@@ -176,3 +176,24 @@ The controller represents Game Logic, like battles, points, or branching dialogu
 
 
 Project Ideas - Physics based quests - simiar to Peak - Grabbing and throwing or placing objects on places.
+
+# WG7 - Lecture notes
+## Optimization Notes
+- Players expect games to run at 60fps 
+- others can run at 30fps
+- 60 fps = only have 16.6 ms to create a frame
+- 30 fps = only have 33.3 ms to create a frame
+- all work is splt into two major proccessors - cpu and gpu
+
+### Memory 
+
+What is memory? 
+- Memory is space on the computer for data
+- data = assets, variable, scens and the stuff inside.
+
+In C# memory thats no longer in use is automatically garbaged collected (cleaned up) which can take signifigant ammount of times
+ 
+A few common issues with memory for performance
+- Art assets - textures models - etc - or scenes hat are unnecesarily large.
+- Code that operates on unnerssarily large data structures lke lists and arrays too often.
+- Code that causes frequent garbage collections of large amounts of data.
