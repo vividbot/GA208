@@ -25,13 +25,13 @@ public class GameController : MonoBehaviour
     }
 
     private void Update () {
-        /*
-        foreach(GameObject obj in _fruits)
-        {
-            string fruitName = obj.name;
-            Debug.Log(fruitName);
-        }
-        */
+        
+        // foreach(GameObject obj in _fruits)
+        // {
+        //     string fruitName = obj.name;
+        //     Debug.Log(fruitName);
+        // }
+        
     }
 
     private void OnDrawGizmos () {

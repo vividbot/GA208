@@ -197,3 +197,18 @@ A few common issues with memory for performance
 - Art assets - textures models - etc - or scenes hat are unnecesarily large.
 - Code that operates on unnerssarily large data structures lke lists and arrays too often.
 - Code that causes frequent garbage collections of large amounts of data.
+
+GC comes peridoically and sweeps up any memory that cant be accessed by the progaam at that point in time 
+- variables will take up space in memory
+
+Assuming the GC runs right after the for loop executses, will the momory for the message be farbage collected?
+
+A: - Yes the message was declated inside the loop so it will contintually be reassigned.
+
+## Profiler
+
+Profiler can help you find issues in your scene and where exactly specific issues are from.
+
+look in heirarchy tab to see where the most time consuming calls are happening. 
+
+Stats Tab in unity will also show current FPS and other issues
