@@ -238,3 +238,36 @@ Final Notes for myself
 - wary of texture size and poly count
 - wary of strings being ran too many times
 - Check the profiler to make sure that things arent taking unnesary ammount of time 
+
+# W8 
+
+
+
+
+
+
+
+# W9 Notes
+## Activity 1 Notes
+### Scaling 
+How would you Describe the problem of discerning whether or not your architectural solution will "scale well?
+- A architectural solution will scale well if, wehn the program is handling a lot of data.
+- - Its performant (Not addressed in this class much)
+- - Its easy for users , whether theyre other programs or content makes designers, writers, artists, 
+
+Why should the issue of scaling matter to you as a Game art student? or in our career
+- Scaling matters because if somthing doesnt scale well then it makes the project more and more difficult and harder to work on, creating slow downs in the process.
+- If you want ot be a programrer in a career then you need to be able to optimize code both for making it more efficent to run, as well as making it easier to read understand and scale well in a large scale project. 
+
+How does the concept of scaling relate to the programing design patterns we've talked about in class.
+- all of the design patterns we'ev learned will help your write code that scales well.
+- Think about how the following & OOP principles can help your codebase grow without getting unmanagable, as a programer or a designer.
+- - State Machines 
+- - MVC
+- - Abstraction and Polymorphism.
+
+
+## Demo Branching Dialogue.
+Dialoge nodes 
+- store refrences to other dialogue nodes.
+- Becomes brancing dialogue, each node stores refrence to another node, allowing the player to go down the 
