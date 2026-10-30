@@ -212,3 +212,29 @@ Profiler can help you find issues in your scene and where exactly specific issue
 look in heirarchy tab to see where the most time consuming calls are happening. 
 
 Stats Tab in unity will also show current FPS and other issues
+
+## common student project performance issues
+- allocating strings frequently (inside loops, inside update)
+- too many debug messages
+- putting stuff in update that doesnt need to run every fram
+- Using GetComponent can bog down performance compared to using a serialized field.
+- Avoid allocating memory in Update - use member variable instead
+- Giant Textures / Extremly dense meshes
+- Using unnecissarily complex colliders - you almost never need mesh colliders!
+- USing Lots of Rigidbodies 
+- if all you need to detect collision, put a rigidbody on the player and not the other object - or set the other
+
+## how much is "too much" how often is "too often?"
+What constitutes a performance issues is relative to your project
+Depends primarily on 1: what platform you want to ship on and then 2: what game experience youre trying to deliver.
+Somthing is too much and too often when it is causing and issues
+Issues can be identified by 
+- Seeing a spike in the profiler 
+- Time # of calls, GC alloc being much larger than anything else in CPU usage list
+Be Wary of people on the internet telling you "this is bad" confidently without knowing cotext
+best way to learn is through experience
+
+Final Notes for myself 
+- wary of texture size and poly count
+- wary of strings being ran too many times
+- Check the profiler to make sure that things arent taking unnesary ammount of time 

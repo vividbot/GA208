@@ -11,7 +11,7 @@ public class GameControllerW6Demo3 : MonoBehaviour
     private List<GameObject> _fruits = new List<GameObject>();
     int fruitNumber = 0;
 
-    private void Awake ()
+    private void Start ()
     {
         ResetGame();
     }
