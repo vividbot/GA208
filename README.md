@@ -267,7 +267,28 @@ How does the concept of scaling relate to the programing design patterns we've t
 - - Abstraction and Polymorphism.
 
 
-## Demo Branching Dialogue.
+### Demo Branching Dialogue.
 Dialoge nodes 
 - store refrences to other dialogue nodes.
 - Becomes brancing dialogue, each node stores refrence to another node, allowing the player to go down the 
+
+Proffesional dialogue systems
+- If you have to make hundres or more lines of dialogue
+authoring stuff in the engine is not the most efficent way to do it
+
+- in most proffesional cases use some kind  of external tool to author dialogue
+- some sort of tool that visualizes branching dialogue, allowing the developer to plan out their dialogue 
+
+## Activity 2 Notes
+- Started with movement Script and building out scenes to 
+- For today working on creating the logic for trackig when items are placed in the right place for a Task
+
+## Activity 3 
+- New Features added - Finished movement script and switched to using the chracter controller. Added the logic for tracking when objects are placed in a specific zone.
+
+Objects are tagged with the "QuestItem" Tag, the objects that are used for the zones objects need to be placed in have a second collider that is a trigger. 
+The "Quest Zone" Objects in the scene use the E_QuestZone Class which uses OnTriggerEnter and OnTriggerExit to track when an object tagged with "QuestItem" enters a scene. It then a fires an method inside of the Locator class, which (eventually) will trigger and event that the UI will subscribe to and then update when the appropriate score is reached.
+
+I collaborated with my partner today in quite a few diffrent instances. We went back and forth asking advice from each other in order to decipher which is the best way to go about scripting things. And since we are already using and testing each others scripts we go back and forth troubleshooting when somthing isnt working correctly. 
+
+Doing this we were able to make sure that the player movement and object pick up mechanic is fully functional and will not hinder our development going forward since its sorted out pretty much as much as we need. Learned that often having multiple sets of eyes on a project can be really helpful in quickly troubleshooting an errror.
