@@ -309,3 +309,8 @@ Doing this we were able to make sure that the player movement and object pick up
 
 ## Activity 3 - Task Check in
 I started working on modiying the first task to create another one that is slightly diffrent, and then starting on creating the quest manager. to track when quests are complete.
+## Activity 4 - Task wrap up
+
+Almost finisehd the quest manager, need to create individual classes and prefabs for each quest that will be triggered. Created the Quest Manager class to have a method that takes in a game object and transform as data. which then uses that input to instantiate the next quest. 
+
+Created a test prefab to start testing that it works will finish next time I get a chance to work on it. 
