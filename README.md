@@ -292,3 +292,20 @@ The "Quest Zone" Objects in the scene use the E_QuestZone Class which uses OnTri
 I collaborated with my partner today in quite a few diffrent instances. We went back and forth asking advice from each other in order to decipher which is the best way to go about scripting things. And since we are already using and testing each others scripts we go back and forth troubleshooting when somthing isnt working correctly. 
 
 Doing this we were able to make sure that the player movement and object pick up mechanic is fully functional and will not hinder our development going forward since its sorted out pretty much as much as we need. Learned that often having multiple sets of eyes on a project can be really helpful in quickly troubleshooting an errror.
+
+# W11 notes
+## Activity 2 - Playtest
+### Notes from playtesting
+- the controller is too fast 
+- play tester automatically knew to grab objects and place them in the scene, 
+- objects seem to be phasing through the walls when moved too fast - change collision type probably.
+- taking awhile to stock items. Ran around a while before starting that task
+- player knew/immdeatly tried to grab the rat objects as soon as they saw it. 
+- Breaking/messing with stuff was fun to the player.
+- the limited ammount of UI was already helpful.
+- Need to clarify which sheleves need to be stocked
+- Player tried to escape but did not succeed, good
+- Rotation of phys objects feels a little weird. 
+
+## Activity 3 - Task Check in
+I started working on modiying the first task to create another one that is slightly diffrent, and then starting on creating the quest manager. to track when quests are complete.
