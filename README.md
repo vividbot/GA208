@@ -314,3 +314,103 @@ I started working on modiying the first task to create another one that is sligh
 Almost finisehd the quest manager, need to create individual classes and prefabs for each quest that will be triggered. Created the Quest Manager class to have a method that takes in a game object and transform as data. which then uses that input to instantiate the next quest. 
 
 Created a test prefab to start testing that it works will finish next time I get a chance to work on it. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Pre learning notes
+## W12
+### Materials
+Materials are a collection of rendering settings used by unity and other 3d programs.
+
+Material maps
+- Albedo/Diffuse - Used for base color information
+- Metalic maps - Define where the object is more or less shiny in a metal-like way
+- Specular - Similar to Metalic but used on non metallic objects (Roughness map)
+- Normal Maps - Create Surface details for lighting to bounce off. Normal Maps encode surface details onto materials. Every pixel on a normal map represents a surface normal instead of a color. 
+
+normals maps use rgb data as the XYZ components of a vector. Every pixel of a normal map is a vector telling us where the surface is pointing, allowing us to create the illusion of bumps/details without extra geometry.
+
+- Magenta - missing material or broken shader
+
+Classic Shading types : PBR
+Pbr stands for physically based rendering, used when developers want a photorealistic look in their game
+
+Toon/Cel Shading
+Cel shading is a style of rendering where shadows are sharp, not blended. Not realistic like PBR but has a more appealing fun and styalized effect.
+
+Mixed Styles
+Games like breath of the wild blend pbr and cel shading. Characters are cel shaded while the environment has a slightly more realistic smooth shading, and vfx like explosions have their own style as well. 
+
+
+### Lights
+
+- lights are gameobjects like anything else in unity
+- Directional - Simulates sun lighting in a scene
+- Point - Creates a light sphere around a location
+- Spot - Creates a cone of light, like a flash light or light that has harsh shading.
+
+- Other settings depend on the kind of light chosen, and generally affect the shape, color, & intensity of the light
+
+### Scene Lighting Settings
+
+- Skybox - A  material that creates the background of the world
+- Sun Source - Some skyboxes use this to change their appearance based on the lights angle. 
+- Environment Lighting - the color of light bouncing around the world (not from a specific light object)
+- Fog - Simulates distant fog. 
+
+change what an object looks like - Use material and shaders
+change the aesthetics of the whole scene - mess with the lighting settings
+
+### Animators
+
+3d animations use deform meshes with bones
+- 3d animations utilize skeletins that attatch to specific polygons on the mesh
+- each fram stores specific bone positions
+
+#### Animation in unity 
+Are animation Clips and Controllers assets or Components?
+- Assets - wew store them in the Project window, which shows our game files
+
+- Double click on a controller asset to open the Animator window
+- clips are store as states with transitions between each state
+- Paramaters are used to cause transitions between clips 
+
+
+We change the value of paramters with code to cause animation changes.
+
+#### How to import animation changes 
+- Add the asset to your game and drag into scene.
+- When first imported the character might be missing textures and animations
+- Apply materials by extracting them from the model. Then assign material that came with model to the base map setting on the material.
+
+- Many humanoid models come with a basic humanoid rig. 
+
+- Select game object with animation component to open animator window. 
+Click and drag the animaton clip and add it to the animator.
+ 
+Run game to make sure animation works 
+
+If animation is moving GameObject
+- uncheck apply Root motion setting to avoid applying transformations to object.
+If you want animation to loop 
+- Dont forget to Check "loop time" in the clip settings. 
+
+### UI: Setting up UI for propper resizing
+
+First set the game preview Resolution in the game window to the exact size you want the game to be on itch. 
+
+Next on Canvas Component, Change 
