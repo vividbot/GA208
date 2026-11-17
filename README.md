@@ -413,4 +413,28 @@ If you want animation to loop
 
 First set the game preview Resolution in the game window to the exact size you want the game to be on itch. 
 
-Next on Canvas Component, Change 
+Next on Canvas Component, Change the UI scale mode, to scale with screen size.
+
+This will help your canvas adapt to whatever size your game is running at even if the player full screens the game
+
+Refrence resolution should be set to the size the game runs at embedded in the itch page, which is the same scale you should set game preview window too. 
+
+#### UI resizing
+Anchors control where on the Canvas tje UI is attatched and how it will squash and stretch relative to the canvas for diffrent game sizes. Corresponds to white arrows, 
+
+The position and width/height settings control the size & placement of the object relative to the anchors, 
+
+To make text always be a reasonable size, check the Auto Size option on the TextMeshPro Component, fiddle with min max settigns to determine smallest and largest sizes. 
+
+#### Giving boxes nice round corners with 9-slicing
+
+UI - 9 - Slicing sprites
+
+Select Sprite that you want too edit
+Leave the 'sprite mode' as 'single' Hit 'Sprite Editor'.
+In the sprite editor, drag the green boxes to create edges for the sprite, the areas inside the edges you create will not stretch when you change the width or height of the GameObject.
+
+Go back to the image component in the UI
+
+Change the "Image type" to "sliced". as long as youre using a sprite that you edited with the steps above to have edges, the sprite should be able to stretch without warping edges. 
+
