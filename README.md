@@ -355,6 +355,7 @@ Then that method runs an if statement against that string, if it matches the str
 
 each quest that inherits from the parent class has its own ovveriden end conditions, which use the score and other variables to determine if somthing has been completed correctly. Once the end condition is met, it triggers an event in the locator, which tells the Quest manager, Which script was finished, and adds 1 to a total game score in the quest manager, to track how many quests have been completed. IF the required number of quests was completed, then the game ends. 
 
+Final Commit https://github.com/vividbot/GDIM32-Final/commit/4bf08c9cc42f14ed3ad5ac99638676c407b6f8fe
 
 
 
