@@ -346,10 +346,14 @@ sort of like irl camera affects and film post process effects.
 - Get new models for phsyics objects
 
 ## Activity 3 Task Check in
-Updated task list, removed some items that were either completed already or were no longer in our goals to complete. Agreed to work on getting the quest management working. Additionally needed to create architecture to have the quest scripts automatically filter out specific information coming from the quest zone scripts, 
+Updated task list, removed some items that were either completed already or were no longer in our goals to complete. Agreed to work on getting the quest management working. Additionally needed to create architecture to have the quest scripts automatically filter out specific information coming from the quest zone scripts, additonally wanted to look into getting some diffrent models into the scene based on some feedback from peers during playtesting.
 
 ## Activity 4 Task 
+Worked on getting the quest manager fully working during class, each individual quest now inherits from a parent "Quest" class, this class outlines basic actions that every script is going to need to track, specifically subscribing (and unsubscribing when destroyed) to the Locator. Then creating a method that will update when the locator fires an event, which passes through an int and a string. 
 
+Then that method runs an if statement against that string, if it matches the string that is exposed in the inspector in unity. then it will add the Int to the overall score of the quest
+
+each quest that inherits from the parent class has its own ovveriden end conditions, which use the score and other variables to determine if somthing has been completed correctly. Once the end condition is met, it triggers an event in the locator, which tells the Quest manager, Which script was finished, and adds 1 to a total game score in the quest manager, to track how many quests have been completed. IF the required number of quests was completed, then the game ends. 
 
 
 
