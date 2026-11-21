@@ -317,6 +317,27 @@ Created a test prefab to start testing that it works will finish next time I get
 
 
 
+# W12 Notes
+## Acticity 1 - Post Processing Demo Notes
+- Rendering pipeline is a sequence of instructions for how everthing in the game will be drawn
+- Shaders themselves are part of the pipeline but are not THE pipline itself
+- Rendering pipelines are written in CPU code- C# or C++, etc
+- The rendering pipeline decides what materials get drawn, inn what order, and actually coordinates trading resources back and forth from the cpu to gpu
+- The RP als determines the shader library - the functions tha tthe shaders can use- which is why only shaders made for a particular pipeline will work in that pipline.
+
+- Unity had multiple options for diffrent rendering pipelines, Most new projects probably use universal or URP rendering pipeline by default or High Deg (HDRP)
+- When choosing materials in the asset store, need to make sure the rendering pipeline is correct.
+
+- how to find out which RP we are using
+
+- Asset store will show which render pipeline it is compatible with. along with which unity version its compatible with. 
+- Shaders from other asset stores are commonly the biggest issue with things being imported and can somtimes being not compatible (IE Stuff from the FAB store with weird shaders or whatnot) 
+
+### Post Processing Effects
+Post processing effects usually go over the camera and final render, 
+sort of like irl camera affects and film post process effects. 
+
+
 
 
 
