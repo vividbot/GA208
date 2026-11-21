@@ -337,7 +337,12 @@ Created a test prefab to start testing that it works will finish next time I get
 Post processing effects usually go over the camera and final render, 
 sort of like irl camera affects and film post process effects. 
 
-
+### Play Testing notes
+- UI missing until clicking on NPC
+- E is a good button for intereact.
+- More tutorial bits, 
+- When text completes, display a prompt for contiue, 
+- Get new models for phsyics objects
 
 
 
